@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint MTLayoutUtilityComponent.podspec' to ensure this is a
+# Be sure to run `pod lib lint YKLayoutUtilityComponent.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MTLayoutUtilityComponent'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MTLayoutUtilityComponent.'
+  s.name             = 'YKLayoutUtilityComponent'
+  s.version          = '1.0.2'
+  s.summary          = '布局工具集合，可以分模块进行集成'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/v2top1@163.com/MTLayoutUtilityComponent'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'http://gitlab.yeahka.com/App/iOS/YKComponents/YKLayoutUtilityComponent'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'v2top1@163.com' => 'tomliu@yeahka.com' }
-  s.source           = { :git => 'https://github.com/v2top1@163.com/MTLayoutUtilityComponent.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'MTLayoutUtilityComponent/Classes/**/*'
+  s.source           = { :git => 'http://gitlab.yeahka.com/App/iOS/YKComponents/YKLayoutUtilityComponent.git', :tag => s.version.to_s }
   
-  # s.resource_bundles = {
-  #   'MTLayoutUtilityComponent' => ['MTLayoutUtilityComponent/Assets/*.png']
-  # }
+  s.ios.deployment_target = '9.0'
+  
+  s.source_files = 'YKLayoutUtilityComponent/Classes/YKLayoutUtilityComponentHeader.h'
+  
+  s.subspec 'YKMasConstraintMaker' do |ss|
+     ss.source_files = 'YKLayoutUtilityComponent/Classes/YKMasConstraintMaker/*.{h,m}'
+    
+   end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  
+  s.dependency 'Masonry'
+  
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   
 end

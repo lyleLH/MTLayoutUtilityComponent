@@ -1,0 +1,16 @@
+PODS:
+  - MTLayoutUtilityComponent (0.1.0)
+
+DEPENDENCIES:
+  - MTLayoutUtilityComponent (from `../`)
+
+EXTERNAL SOURCES:
+  MTLayoutUtilityComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MTLayoutUtilityComponent: 9e44435ee39c6e1f9f1db56cc881d35303ea83ac
+
+PODFILE CHECKSUM: d6a600ed86cf3ddd0437c83b7b985dd6e81b0a38
+
+COCOAPODS: 1.10.1
