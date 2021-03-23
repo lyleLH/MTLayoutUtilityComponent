@@ -1,9 +1,9 @@
 PODS:
   - Masonry (1.1.0)
-  - MTLayoutUtilityComponent (1.0.2):
+  - MTLayoutUtilityComponent (1.0.0):
     - Masonry
-    - MTLayoutUtilityComponent/MTMasConstraintMaker (= 1.0.2)
-  - MTLayoutUtilityComponent/MTMasConstraintMaker (1.0.2):
+    - MTLayoutUtilityComponent/MTMasConstraintMaker (= 1.0.0)
+  - MTLayoutUtilityComponent/MTMasConstraintMaker (1.0.0):
     - Masonry
 
 DEPENDENCIES:
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MTLayoutUtilityComponent: f44623f9a207d959f4594ee6b7a8a217d5b2cdb0
+  MTLayoutUtilityComponent: 8dd3130346a444d9081d069343f3d3a1cef030b6
 
 PODFILE CHECKSUM: d6a600ed86cf3ddd0437c83b7b985dd6e81b0a38
 

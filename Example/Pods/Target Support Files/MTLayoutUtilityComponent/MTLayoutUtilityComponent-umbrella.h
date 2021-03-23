@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "MTLayoutUtilityComponentHeader.h"
 #import "MTMasConstraintMaker.h"
 
 FOUNDATION_EXPORT double MTLayoutUtilityComponentVersionNumber;

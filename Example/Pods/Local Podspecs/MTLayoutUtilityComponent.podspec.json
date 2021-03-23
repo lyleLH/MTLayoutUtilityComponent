@@ -1,6 +1,6 @@
 {
   "name": "MTLayoutUtilityComponent",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "summary": "布局工具集合，可以分模块进行集成",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/lyleLH/MTLayoutUtilityComponent",
@@ -12,8 +12,8 @@
     "major Tom": "v2top1@163.com"
   },
   "source": {
-    "git": "git@github.com:lyleLH/MTLayoutUtilityComponent.git",
-    "tag": "1.0.2"
+    "git": "https://github.com/lyleLH/MTLayoutUtilityComponent.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "9.0"
