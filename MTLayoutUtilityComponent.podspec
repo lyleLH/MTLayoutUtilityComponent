@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint YKLayoutUtilityComponent.podspec' to ensure this is a
+# Be sure to run `pod lib lint MTLayoutUtilityComponent.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'YKLayoutUtilityComponent'
+  s.name             = 'MTLayoutUtilityComponent'
   s.version          = '1.0.2'
   s.summary          = '布局工具集合，可以分模块进行集成'
 
@@ -21,17 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'http://gitlab.yeahka.com/App/iOS/YKComponents/YKLayoutUtilityComponent'
+  s.homepage         = 'https://github.com/lyleLH/MTLayoutUtilityComponent'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'v2top1@163.com' => 'tomliu@yeahka.com' }
-  s.source           = { :git => 'http://gitlab.yeahka.com/App/iOS/YKComponents/YKLayoutUtilityComponent.git', :tag => s.version.to_s }
+  s.author           = { 'major Tom' => 'v2top1@163.com' }
+  s.source           = { :git => 'git@github.com:lyleLH/MTLayoutUtilityComponent.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '9.0'
   
-  s.source_files = 'YKLayoutUtilityComponent/Classes/YKLayoutUtilityComponentHeader.h'
+  s.source_files = 'MTLayoutUtilityComponent/Classes/MTLayoutUtilityComponentHeader.h'
   
-  s.subspec 'YKMasConstraintMaker' do |ss|
-     ss.source_files = 'YKLayoutUtilityComponent/Classes/YKMasConstraintMaker/*.{h,m}'
+  s.subspec 'MTMasConstraintMaker' do |ss|
+     ss.source_files = 'MTLayoutUtilityComponent/Classes/MTMasConstraintMaker/*.{h,m}'
     
    end
 

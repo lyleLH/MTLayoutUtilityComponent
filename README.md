@@ -2,7 +2,7 @@
 
 此组件集合了一些好用的布局工具。
 
-## `YKMasConstraintMaker`
+## `MTMasConstraintMaker`
 
 是一个模仿`Masonry` 的链式语法，用来简化`Masonry`使用的工具。
 使用一些更易理解的函数属性来代替 `Masonry`中 `MASConstraintMaker`的属性。
@@ -29,9 +29,9 @@ objc函数式调用
 #### 实际例子
 
 ```ObjC
-- (YKMasConstraintMaker *(^)(id))to {
-    return ^YKMasConstraintMaker * (id obj) {
-        YKMasConstraintMaker *emaker = [YKMasConstraintMaker new];
+- (MTMasConstraintMaker *(^)(id))to {
+    return ^MTMasConstraintMaker * (id obj) {
+    MTMasConstraintMaker *emaker = [MTMasConstraintMaker new];
         emaker.maker = self;
         emaker.obj = obj;
         return emaker;
@@ -43,9 +43,9 @@ objc函数式调用
 - 实现 `MASConstraintMaker`的分类
 - 为分类新增实例方法`to`，其返回值是一个`block`（匿名函数）
 - 此匿名函数的参数任意类型对象`id`，返回值是`YKMasConstraintMaker`实例
-- 在匿名函数内部可以操作将`MASConstraintMaker`实例的属性 赋值 给匿名函数将要返回的`YKMasConstraintMaker` 实例 的属性
-- `make.to(self.view)` 运行完毕之后其返回值是一个`YKMasConstraintMaker`实例
-- `YKMasConstraintMaker`实例的方法是我们定义的更简便易懂的方法
+- 在匿名函数内部可以操作将`MASConstraintMaker`实例的属性 赋值 给匿名函数将要返回的`MTMasConstraintMaker` 实例 的属性
+- `make.to(self.view)` 运行完毕之后其返回值是一个`MTMasConstraintMaker`实例
+- `MTMasConstraintMaker`实例的方法是我们定义的更简便易懂的方法
 - `make`实例的链式调用全部都是返回自身，再交给`mas_makeConstraints:^(MASConstraintMaker *make) `回调给上层，执行约束的安装
 
 
@@ -66,9 +66,9 @@ objc函数式调用
 ## 集成
 
 ```ruby
-pod 'YKLayoutUtilityComponent',:subspecs => ['YKMasConstraintMaker']
+pod 'MTLayoutUtilityComponent',:subspecs => ['MTMasConstraintMaker']
 ```
  
  ```ObjC
- #import <YKLayoutUtilityComponent/YKMasConstraintMaker.h>
+ #import <MTLayoutUtilityComponent/MTMasConstraintMaker.h>
  ```
